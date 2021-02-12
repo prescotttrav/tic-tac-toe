@@ -1,0 +1,15 @@
+version: 2.1
+
+workflows:
+  version: 2.1
+  compile:
+    jobs:
+      - compile_executable
+
+jobs:
+  compile_executable:
+    docker:
+      - image: gcc:8.2
+    steps:
+      - checkout
+      - run: make tictactoe
