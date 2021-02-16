@@ -1,7 +1,7 @@
 #pragma once
 
-#include "../board.h"
-#include "../validateWinner.h"
+#include "../src/board.h"
+#include "../src/validateWinner.h"
 #include <stdio.h>
 #include <stdlib.h>
 

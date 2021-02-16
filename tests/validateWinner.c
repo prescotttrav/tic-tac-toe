@@ -1,4 +1,4 @@
-#include "../board.h"
+#include "../src/board.h"
 #include "validateWinner-tester.h"
 
 void testInitializeVisitedPositions() {

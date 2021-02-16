@@ -24,7 +24,7 @@ jobs:
     steps:
       - checkout
       - run: make test
-      - run: mkdir test && mv test.exe test/test.exe
+      - run: mkdir test && mv test.exe test/
       - persist_to_workspace:
           root: test
           paths:

@@ -1,7 +1,7 @@
 #pragma once
 
-#include "../board.h"
-#include "../position.h"
+#include "../src/board.h"
+#include "../src/position.h"
 #include <stdio.h>
 #include <stdlib.h>
 

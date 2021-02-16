@@ -4,10 +4,6 @@
 #include "playerMove.h"
 #include "position.h"
 #include "validateWinner.h"
-//#include "test/main.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 
 void initializeGame(char symbol, char board[BOARD_SIZE][BOARD_SIZE]) {
   gameTitle();
@@ -16,7 +12,6 @@ void initializeGame(char symbol, char board[BOARD_SIZE][BOARD_SIZE]) {
 }
 
 int main() {
-  // test();
   char board[BOARD_SIZE][BOARD_SIZE];
   int counter = 0;
 
