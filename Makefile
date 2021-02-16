@@ -18,7 +18,7 @@ tictactoe: $(OBJ)
 .PHONY: clean test
 
 test: $(TEST_OBJ)
-	$(CC) -g -o $@ $^ $(CFLAGS)
+	$(CC) -g -o $@.exe $^ $(CFLAGS)
 
 clean:
 	rm -f *.o tests/*.o tictactoe test 

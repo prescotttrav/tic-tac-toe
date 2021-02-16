@@ -1,8 +1,7 @@
-testInitializeVisitedPositions #include "../board.h"
+#include "../board.h"
 #include "validateWinner-tester.h"
 
-    void
-    testInitializeVisitedPositions() {
+void testInitializeVisitedPositions() {
   for (int i = 0; i < BOARD_SIZE; i += 2) {
     for (int j = BOARD_SIZE - 1; j >= 0; j -= 2) {
       Position p = {.row = i, .col = j};

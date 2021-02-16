@@ -5,6 +5,10 @@ workflows:
   compile:
     jobs:
       - compile_executable
+      - compile_tests
+      - run_tests:
+          requires:
+            - compile_tests
 
 jobs:
   compile_executable:
@@ -13,3 +17,23 @@ jobs:
     steps:
       - checkout
       - run: make tictactoe
+
+  compile_tests:
+    docker:
+      - image: gcc:8.2
+    steps:
+      - checkout
+      - run: make test
+      - run: mkdir test && mv test.exe test/test.exe
+      - persist_to_workspace:
+          root: test
+          paths:
+            - "*.exe"
+
+  run_tests:
+    docker:
+      - image: gcc:8.2
+    steps:
+      - attach_workspace:
+          at: .
+      - run: ./test.exe
