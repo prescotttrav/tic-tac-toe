@@ -15,4 +15,10 @@ enum Direction
 _Bool validateWinner(Position p, char symbol,
                      char board[BOARD_SIZE][BOARD_SIZE]);
 
+void initializeVisitedPositions(Position p, Position visited[]);
+
+int adjacentSimilarElements(int count, enum Direction dir, char symbol,
+                            Position p, int index, Position visited[],
+                            char board[BOARD_SIZE][BOARD_SIZE]);
+
 #endif

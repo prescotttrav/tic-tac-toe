@@ -15,7 +15,12 @@ Position advancePosition(enum Direction dir, Position p);
 
 Position retractPosition(enum Direction dir, Position p);
 
+_Bool emptyPosition(Position p);
+
 _Bool positionEquality(Position p1, Position p2);
+
+_Bool occupiedDisplayValue(int displayValue,
+                           char board[BOARD_SIZE][BOARD_SIZE]);
 
 _Bool validPosition(int displayValue, char board[BOARD_SIZE][BOARD_SIZE]);
 
