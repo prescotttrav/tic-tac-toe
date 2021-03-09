@@ -1,4 +1,4 @@
-# Tic Tac Toe - Console Game [![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=shield&circle-token=5c2a5543f7d879b9db7f55201808e88ee052ecc3)](https://circleci.com/gh/prescotttrav/tic-tac-toe)
+# Tic Tac Toe - Console Game [![CircleCI](https://circleci.com/gh/prescotttrav/tic-tac-toe.svg?style=shield&circle-token=5c2a5543f7d879b9db7f55201808e88ee052ecc3)](https://circleci.com/gh/prescotttrav/tic-tac-toe)
 
 You versus your system, the grand prix of child games!
 
